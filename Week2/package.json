@@ -1,0 +1,30 @@
+{
+  "name": "Week2",
+"version": "1.0.0",
+"description": "sit 725 week 2 prac",
+"main": "server.js",
+"scripts": {
+"start": "node server.js"
+},
+"repository": {
+"type": "git",
+"url": "git+"
+},
+"keywords": [
+"Nodejs",
+"Express",
+"Materialize",
+"HTML",
+"JS",
+"CSS"
+],
+"author": "Nethmi Weeeraman",
+"license": "MIT",
+"bugs": {
+"url": ""
+},
+"homepage": "",
+"dependencies": {
+"express": "^4.17.1"
+}
+}

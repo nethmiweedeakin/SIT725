@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Addition Result</title>
+</head>
+<body>
+    <h2>Add Two Numbers</h2>
+
+    <label>Number 1: <input type="number" id="num1"></label><br><br>
+    <label>Number 2: <input type="number" id="num2"></label><br><br>
+
+    <button onclick="getSum()">Add</button>
+
+    <h3>Result:</h3>
+    <div id="result"></div>
+
+    <script>
+        function getSum() {
+            const num1 = document.getElementById("num1").value;
+            const num2 = document.getElementById("num2").value;
+
+            fetch(`/add?num1=${num1}&num2=${num2}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        document.getElementById("result").innerHTML = `<p style="color:red;">${data.error}</p>`;
+                    } else {
+                        document.getElementById("result").innerHTML = `
+                            <p><strong>Number 1:</strong> ${data.num1}</p>
+                            <p><strong>Number 2:</strong> ${data.num2}</p>
+                            <p><strong>Total:</strong> ${data.total}</p>
+                            <p><em>${data.message}</em></p>
+                        `;
+                    }
+                })
+                .catch(error => {
+                    document.getElementById("result").innerHTML = `<p style="color:red;">Oops! ${error}</p>`;
+                });
+        }
+    </script>
+</body>
+</html>
