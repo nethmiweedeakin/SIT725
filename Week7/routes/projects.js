@@ -17,5 +17,5 @@ router.post('/', (req, res) => {
     
 })
 
-// Exports the router to be used in the main application file.
+
 module.exports = router;

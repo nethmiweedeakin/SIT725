@@ -1,5 +1,3 @@
-// Description: This script seeds the database with initial data for the Project model.
-// It connects to the MongoDB database, clears any existing data, and inserts new seed data.
 const mongoose = require("mongoose");
 const { Project } = require("../server");
 

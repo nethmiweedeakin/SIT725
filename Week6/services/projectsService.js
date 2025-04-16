@@ -1,4 +1,4 @@
-//Description: This file's function is to interact with the projects collection in the database
+
 //USE api/projects to use projects functions from database
 let client = require("../config/dbConnect");
 
@@ -25,7 +25,7 @@ const getAllProjects = async (res) => {
     }
 }
 
-// Function to insert a new project card into the database
+
 const insertProject = async (project, res) => {
     try {
         const result = await projectsCollection.insertOne(project); 
@@ -36,6 +36,7 @@ const insertProject = async (project, res) => {
         res.status(500).send({ result: 'Error inserting project' });
     }
 }
+
 
 
 module.exports = {

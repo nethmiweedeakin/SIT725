@@ -1,6 +1,3 @@
-// Description: This script handles the dynamic loading of cards on the page, form submission, and modal interactions.
-
-
 // Default card list
 let cardList = [
     {

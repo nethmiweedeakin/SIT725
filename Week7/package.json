@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "sit 725 week 5 prac",
   "main": "server.js",
-  "scripts": { 
+  "scripts": {
     "test": "mocha --reporter spec",
     "start": "node server.js"
   },
