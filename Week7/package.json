@@ -26,7 +26,13 @@
   },
   "homepage": "",
   "dependencies": {
+    "chai-http": "^4.3.0",
     "express": "^4.17.1",
     "routes": "^2.1.0"
+  },
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "cheerio": "^1.0.0",
+    "mocha": "^11.1.0"
   }
 }

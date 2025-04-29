@@ -148,7 +148,7 @@ describe("Check POST API", function () {
   const baseUrl = "http://localhost:8080";
   const testProject = {
     title: "Created by Test",
-    image: "images/kitten.jpg",
+    image: "/images/kitten.jpg",
     link: "http://example.com/project",
     description: "This is a test by mocha."
   };

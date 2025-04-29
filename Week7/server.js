@@ -71,6 +71,7 @@ socket.on('disconnect', () => {
 console.log('user disconnected');
 });
 
+//Random number generator
 setInterval(()=>{
 socket.emit('number', parseInt(Math.random()*10));
 }, 1000);
@@ -79,6 +80,8 @@ socket.emit('number', parseInt(Math.random()*10));
 http.listen(port,()=>{
 console.log("Listening on port ", port);
 });
+
+
 
 // Export the Project model for use in other files
 module.exports = { Project };

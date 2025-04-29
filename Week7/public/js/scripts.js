@@ -109,3 +109,8 @@ const submitForm = () => {
 const clickMe = () => {
     alert("Thanks for clicking me. Hope you have a nice day!");
 };
+
+// Function to show random number in the console
+socket.on('number', (number) => {
+    showRandomNumber(number);
+});
